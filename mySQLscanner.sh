@@ -2,7 +2,7 @@
 
 #this script is designed to find hosts with MySQL installed
 
-nmap -sT 10.0.0.0/24 -p 3306 > /dev/null -oG MySQLscan
+nmap -sT 172.16.227.214/22 -p 80 > /dev/null -oG MySQLscan
 
 cat MySQLscan | grep open > mySQLscan2
 
