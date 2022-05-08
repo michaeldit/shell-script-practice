@@ -1,0 +1,20 @@
+This is a set of instructions for pairing bluetooth via 
+Terminal
+
+systemctl status bluetooth
+
+systemctl start bluetooth
+
+
+edit config file for bluetooth /etc/bluetooth/main.conf
+sudo vi /etc/bluetooth/main.conf
+
+Look for the ControllerMode and set to bredr
+restart Bluetooth
+sudo /etc/init.d/bluetooth restart
+
+Use bluetoothctl 
+After prompted type scan on
+pair <Airpod Name Here>
+
+done
